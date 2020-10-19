@@ -46,7 +46,7 @@ cp -Rf Actions-OpenWrt/* openwrt/
 cd openwrt
 echo "
 
-1. X86_64
+1. Lienol_phicomm_k3
 
 2. K2p
 
@@ -72,7 +72,7 @@ read -p "你想要编译哪个固件？ " CHOOSE
 
 case $CHOOSE in
 	1)
-		firmware="x86_64"
+		firmware="Lienol_phicomm_k3"
 	break
 	;;
 	2)
@@ -111,8 +111,8 @@ esac
 done
 
 
-read -p "请输入后台地址 [回车默认10.0.0.1]: " ip
-ip=${ip:-"10.0.0.1"}
+read -p "请输入后台地址 [回车默认192.168.0.1]: " ip
+ip=${ip:-"192.168.0.1"}
 echo "您的后台地址为: $ip"
 
 
